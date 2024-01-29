@@ -12,6 +12,8 @@ pkgbase = python-rich
 	depends = python-colorama
 	depends = python-markdown-it-py
 	depends = python-pygments
+	provides = rich=13.7.0
+	conflicts = rich
 	source = https://github.com/willmcgugan/rich/archive/v13.7.0/rich-13.7.0.tar.gz
 	b2sums = d474b5817c0e64143313a1d0b66ef0953990196ecef6b0fd62d82828902008fa7293290c7f43c605a0c897ecebecb84e816583da8921cd31fc56c902ead2f5c9
 
