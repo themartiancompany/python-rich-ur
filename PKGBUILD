@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
 # Maintainer: Frederik Schwan <freswa at archlinux dot org>
 # Contributor: Hao Long <imlonghao@archlinuxcn.org>
 
@@ -20,6 +22,8 @@ build() {
 
 package() {
   cd rich-${pkgver}
-  python -m installer --destdir="$pkgdir" dist/*.whl
+  python -m installer --destdir="${pkgdir}" dist/*.whl
   install -Dm644 LICENSE "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
 }
+
+# vim:set sw=2 sts=-1 et:
